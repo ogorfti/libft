@@ -1,40 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/04 17:10:59 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/08 17:10:49 by ogorfti          ###   ########.fr       */
+/*   Created: 2022/10/08 15:42:35 by ogorfti           #+#    #+#             */
+/*   Updated: 2022/10/08 17:01:31 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_calloc(size_t count, size_t size)
+/*
+char f(unsigned int n, char c)
 {
-	size_t	i;
-	void	*ptr;
+	if(n == 5)
+	write(1,"x",1);
+	elsewrite(1, &c, 1);
+	return 0;
+}*/
+
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	int i;
+	char *tar = NULL;
 
 	i = 0;
-	// if(count >= SIZE_MAX && size >= SIZE_MAX)
-	// 	return (NULL);
-	ptr = malloc(count * size);
-	if (!ptr)
-		return (NULL);
-	else
+	if (s)
+		tar = ft_strdup(s);
+	if (tar)
 	{
-		ft_bzero(ptr,count*size);	
-		return (ptr);
+		while (tar[i])
+		{
+			tar[i] = f(i, tar[i]);
+			i++;
+		}
 	}
-	return (0);
+	return (tar);
 }
 /*
 int main()
 {
-	size_t sc = 4;
-	size_t ss = 4;
-	printf("mine : %s\n", ft_calloc(sc, ss));
-	printf("original : %s\n", calloc(sc, ss));
+	char *s = "hello world";
+	ft_strmapi(s,f);
+	return (0);
 }*/

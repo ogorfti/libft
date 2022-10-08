@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:13:49 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/07 14:32:02 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/08 16:14:12 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,7 @@ void 	ft_putchar_fd(char c, int fd);
 void 	ft_putstr_fd(char *s, int fd);
 void 	ft_putendl_fd(char *s, int fd);
 void 	ft_putnbr_fd(int n, int fd);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
