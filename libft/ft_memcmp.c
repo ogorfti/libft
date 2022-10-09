@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 17:57:55 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 20:52:04 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/09 13:58:17 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 /*
 int main()
 {
-	char s1[10] = {0, 0, 42, 0};
-	char s2[10] = {0, 0, 127, 0};
+	char s1[10] = "aaab";
+	char s2[10] = "aaac";
 
-	printf("%d\n", ft_memcmp(s1, s2, 4));
-	printf("%d\n", memcmp(s1, s2, 4));
+	printf("%d\n", ft_memcmp(s1, s2, 1));
+	//printf("%d\n", memcmp(s1, s2, 1);
 }*/

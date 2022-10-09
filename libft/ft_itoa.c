@@ -6,22 +6,24 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:36:28 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/08 20:02:25 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/09 13:54:23 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-static char ft_putchar(char c)
-{
-	write(1, &c, 1);
-}*/
 
-static int get_len(int value)
+static int	get_len(int value)
 {
-	int len;
+	int	len;
 
 	len = 0;
+	if (value < 0)
+	{
+		value *= -1;
+		len++;
+	}
+	if (value == 0)
+		return (1);
 	while (value)
 	{
 		value = value / 10;
@@ -30,47 +32,37 @@ static int get_len(int value)
 	return (len);
 }
 
-char *cnv_n(int n)
+char	*ft_itoa(int n)
 {
-	char *str;
-	int i;
+	char	*str;
+	int		i;
+	int		s;
 
-	i = 0;
-	str = (char *)malloc(get_len(n) + 1);
-	if (n >= 0 && n <= 9)
+	s = 0;
+	i = get_len(n);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	str = malloc(i + 1);
+	if (!str)
+		return (NULL);
+	if (n < 0)
 	{
-		str[i] = n + '0';
-		i++;
-		//printf("%d\n", i);
-	}
-	else if(n > 9)
-	{
-		cnv_n(n / 10);
-		cnv_n(n % 10);
+		str[0] = '-';
+		n *= -1;
+		s = 1;
 	}
 	str[i] = '\0';
+	i--;
+	while (i >= s)
+	{
+		str[i--] = (n % 10) + 48;
+		n = n / 10;
+	}
 	return (str);
 }
 /*
-char *ft_itoa(int n)
-{
-	char *s;
-	int i;
-
-	i = 0;
-	if (n >= 0 && n <= 9)
-	{
-		ft_putchar(n + '0');
-	}
-	else if(n > 9)
-	{
-		ft_putchar(n / 10 + '0');
-		ft_putchar(n % 10 + '0');
-	}
-}*/
-
 int main()
 {
-	int n = 13;
-	printf("%s\n", cnv_n(n));
-}
+	int n = -2147483648;
+	printf("%s\n", ft_itoa(n));
+}*/
