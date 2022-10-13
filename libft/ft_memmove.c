@@ -6,16 +6,16 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 11:58:41 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/05 12:34:37 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/13 22:10:39 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char *cnv_dst;
-	const char *cnv_src;
+	char		*cnv_dst;
+	const char	*cnv_src;
 
 	cnv_src = src;
 	cnv_dst = dst;

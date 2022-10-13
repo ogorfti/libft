@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:42:35 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/08 17:01:31 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/13 22:17:56 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,13 @@ char f(unsigned int n, char c)
 	return 0;
 }*/
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int i;
-	char *tar = NULL;
+	int		i;
+	char	*tar;
 
 	i = 0;
+	*tar = NULL;
 	if (s)
 		tar = ft_strdup(s);
 	if (tar)

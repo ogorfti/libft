@@ -6,15 +6,15 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 19:14:21 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/06 17:04:18 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/13 22:19:53 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int is_not_set(const char *set, char c)
+static int	is_not_set(const char *set, char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (set[i])
@@ -26,26 +26,25 @@ static int is_not_set(const char *set, char c)
 	return (0);
 }
 
-char *ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
-
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
-	if(!s1 || !set)
-	return (0);
+	if (!s1 || !set)
+		return (0);
 	j = ft_strlen(s1) - 1;
 	while (s1[i])
 	{
 		if (!is_not_set(set, s1[i]))
-			break;
+			break ;
 		i++;
 	}
 	while (j >= i)
 	{
 		if (!is_not_set(set, s1[j]))
-			break;
+			break ;
 		j--;
 	}
 	return (ft_substr(s1, i, j - i + 1));

@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 16:09:26 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/05 12:50:20 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/13 22:08:39 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	unsigned int	i;
 	unsigned char	*cnv_s1;
 	unsigned char	*cnv_s2;
-	
 
 	i = 0;
 	cnv_s1 = (void *) s1;

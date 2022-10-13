@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 17:10:59 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/09 13:32:47 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/13 22:07:38 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 
 	i = 0;
-	if(count >= SIZE_MAX && size >= SIZE_MAX)
+	if (count >= SIZE_MAX && size >= SIZE_MAX)
 		return (NULL);
 	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);
 	else
 	{
-		ft_bzero(ptr,count*size);	
+		ft_bzero(ptr, count * size);
 		return (ptr);
 	}
 	return (0);
