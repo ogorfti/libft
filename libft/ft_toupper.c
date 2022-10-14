@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 11:37:01 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 21:47:52 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/14 22:08:19 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,11 @@
 
 int	ft_toupper(int c)
 {
-	unsigned char	x;
-
-	x = c;
-	if (x >= 'a' && x <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		x = x - 32;
+		c = c - 32;
 	}
-	return (x);
+	return (c);
 }
 /*
 int main()

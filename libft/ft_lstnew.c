@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/30 11:52:41 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/14 22:06:51 by ogorfti          ###   ########.fr       */
+/*   Created: 2022/10/14 13:13:58 by ogorfti           #+#    #+#             */
+/*   Updated: 2022/10/14 14:11:56 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//upper case to lower case letter conversion
-
-int	ft_tolower(int c)
-{
-	if (c >= 'A' && c <= 'Z')
-		c = c + 32;
-	return (c);
-}
 /*
-int main()
+t_list *ft_lstnew(void *content)
 {
-	printf("%c\n", ft_tolower('O'));
-	printf("%c\n", tolower('O'));
+	struct s_list *next = malloc(sizeof(struct s_list))
 }*/

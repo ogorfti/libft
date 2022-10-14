@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 14:19:23 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:23:02 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/14 22:41:28 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	cnv_s = (char *)s;
 	if (!s)
 		return (NULL);
-	if (len >= ft_strlen(s))
-		len = ft_strlen(s);
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
 	if (start >= ft_strlen(s))
 		return (ft_strdup(""));
 	cnv_d = (char *)malloc(len + 1);

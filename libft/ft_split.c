@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:56:45 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 21:52:31 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/14 14:10:15 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	count_str(char const *str, char sep)
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;
@@ -30,8 +30,8 @@ static int	count_str(char const *str, char sep)
 
 static int	get_first_pos(char *str, char sep, int end)
 {
-	size_t start;
-	size_t i;
+	size_t	start;
+	size_t	i;
 
 	i = 0;
 	start = end;
@@ -45,8 +45,8 @@ static int	get_first_pos(char *str, char sep, int end)
 
 static int	get_last_pos(char *str, char sep, int start)
 {
-	size_t i;
-	size_t end;
+	size_t	i;
+	size_t	end;
 
 	i = 0;
 	end = start;
@@ -60,41 +60,38 @@ static int	get_last_pos(char *str, char sep, int start)
 
 char	**ft_split(char const *str, char sep)
 {
-	char	*s = (char *)str;
-	int		i;
 	int		start;
 	int		end;
+	int		ctr;
 	int		counter;
 	char	**result;
 
-	if (!s)
+	if (!(char *)str)
 		return (0);
-	result = malloc(sizeof(char *) * count_str(s, sep) + 1);
+	result = malloc(sizeof(char *) * (count_str((char *)str, sep) + 1));
 	if (!result)
 		return (0);
-	counter = 0;
 	start = 0;
 	end = 0;
-	i = 0;
-	while (i < count_str(s, sep))
+	counter = 0;
+	ctr = count_str((char *)str, sep);
+	while (ctr > 0)
 	{
-		start = get_first_pos(s + end, sep, end);
-		end = get_last_pos(s + start, sep, start);
-		result[counter] = ft_substr(s, start, (end - start));
+		start = get_first_pos((char *)str + end, sep, end);
+		end = get_last_pos((char *)str + start, sep, start);
+		result[counter] = ft_substr((char *)str, start, (end - start));
 		counter++;
-		i++;
-		//exit (EXIT_SUCCESS);
-		//exit (EXIT_FAILURE);
+		ctr--;
 	}
-	result[counter] = NULL;
-	
+	result[counter] = 0;
 	return (result);
 }
+
 /*
 int main()
 {
 	char c = ' ';
-	char s[100] = "  ab  cfjb bhbv hv  ";
+	char s[] = "vc gdf fd";
 	char **sc = ft_split(s, c);
 	int i = 0;
 	while (i < count_str(s, c))

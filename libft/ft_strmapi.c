@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:42:35 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:17:56 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/14 10:30:32 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*tar;
 
 	i = 0;
-	*tar = NULL;
+	tar = NULL;
 	if (s)
 		tar = ft_strdup(s);
 	if (tar)

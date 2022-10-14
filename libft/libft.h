@@ -6,20 +6,20 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:13:49 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:26:32 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/14 14:14:44 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <unistd.h>
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdlib.h>
-#include <strings.h>
-#include <fcntl.h>
+# include <unistd.h>
+# include <stdio.h>
+# include <ctype.h>
+# include <string.h>
+# include <stdlib.h>
+# include <strings.h>
+# include <fcntl.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -55,5 +55,11 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_itoa(int n);
 char	**ft_split(char const *str, char sep);
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 #endif
