@@ -1,32 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 13:15:42 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/17 14:34:42 by ogorfti          ###   ########.fr       */
+/*   Created: 2022/10/19 13:01:36 by ogorfti           #+#    #+#             */
+/*   Updated: 2022/10/19 20:25:19 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-t_list	*ft_lstnew(void *content)
+/*
+void del(void *content)
 {
-	t_list	*head;
+	free(content);
+}*/
 
-	head = malloc(sizeof(t_list));
-	if (!head)
-		return (0);
-	head->content = content;
-	head->next = NULL;
-	return (head);
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
+{	
+	del(lst->content);
+	free(lst);
 }
 /*
 int main()
 {
-	t_list *p;
-	p = ft_lstnew("Gfx");
-	printf("%s", (char *)p->next);	
+	t_list *n1;
+	t_list *n2;
+	t_list *head;
+
+	n1 = ft_lstnew(ft_strdup("test1"));
+	n2 = ft_lstnew(ft_strdup("test2"));
+	n1->next = n2;
+	head = n1;
+
+	ft_lstdelone(n1, del);
+	while (head != NULL)
+	{
+		printf("%s", head->content);
+		head = head->next;
+	}
 }*/

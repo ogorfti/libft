@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 13:15:42 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/17 14:34:42 by ogorfti          ###   ########.fr       */
+/*   Created: 2022/10/17 15:54:05 by ogorfti           #+#    #+#             */
+/*   Updated: 2022/10/18 14:46:55 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*head;
-
-	head = malloc(sizeof(t_list));
-	if (!head)
-		return (0);
-	head->content = content;
-	head->next = NULL;
-	return (head);
+	new->next = *lst;
+	*lst = new;
 }
 /*
 int main()
 {
-	t_list *p;
-	p = ft_lstnew("Gfx");
-	printf("%s", (char *)p->next);	
+	t_list *lst;
+	 lst = ft_lstnew("test");
+
+	t_list *new;
+	new = ft_lstnew("hgj");
+
+	ft_lstadd_front(&lst, new);
+	while (lst)
+	{
+		printf("%d\n", (int )lst->next);
+		lst = lst->next;
+	}
 }*/

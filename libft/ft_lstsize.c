@@ -1,32 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 13:15:42 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/17 14:34:42 by ogorfti          ###   ########.fr       */
+/*   Created: 2022/10/18 14:50:15 by ogorfti           #+#    #+#             */
+/*   Updated: 2022/10/19 20:26:51 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*head;
+	int	count;
 
-	head = malloc(sizeof(t_list));
-	if (!head)
+	count = 0;
+	if (!lst)
 		return (0);
-	head->content = content;
-	head->next = NULL;
-	return (head);
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		count++;
+	}
+	return (count);
 }
 /*
 int main()
 {
-	t_list *p;
-	p = ft_lstnew("Gfx");
-	printf("%s", (char *)p->next);	
-}*/
+	t_list *old;
+	t_list *new;
+
+	
+	new = ft_lstnew("test1");
+	old = ft_lstnew("test2");
+	ft_lstadd_front(&old, new);
+	while (old)
+	{
+		printf("%s\n", old->content);
+		old = old->next;
+	}
+	printf("size node :%d\n", ft_lstsize(new));
+}
+*/
