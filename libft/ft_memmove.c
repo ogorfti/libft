@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 11:58:41 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:10:39 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/21 13:23:23 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,5 @@ int main()
 	char s2[10] = "abcdefj";
 	printf("original : %s \n", memmove(s2, s2 +2, 3));
 	printf("%s\n", s2);
-}*/
+}
+*/

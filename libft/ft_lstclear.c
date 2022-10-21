@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 16:30:19 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/19 20:28:05 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/21 14:52:42 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
+	if (!lst || !del)
+		return ;
 	tmp = *lst;
 	while (tmp)
 	{

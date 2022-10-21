@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:01:36 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/19 20:25:19 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/21 14:53:44 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void del(void *content)
 }*/
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
-{	
+{
+	if (!lst || !del)
+		return ;
 	del(lst->content);
 	free(lst);
 }
