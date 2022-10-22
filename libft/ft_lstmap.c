@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 09:47:08 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/21 14:55:05 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/21 19:55:25 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,20 @@ void *f(void *content)
 */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*current;
+	t_list	*curr;
 	t_list	*new;
 
-	current = 0;
+	curr = 0;
 	new = 0;
 	while (lst != NULL)
 	{
-		current = ft_lstnew(f(lst->content));
-		if (!current)
+		curr = ft_lstnew(f(lst->content));
+		if (!curr)
 		{
-			ft_lstclear(&current, del);
+			ft_lstclear(&curr, del);
 			return (0);
 		}
-		ft_lstadd_back(&new, current);
+		ft_lstadd_back(&new, curr);
 		lst = lst->next;
 	}
 	return (new);
