@@ -45,16 +45,16 @@
 
 ### Non-standard functions
 
-* [`ft_putchar_fd`](ft_putchar_fd.c)		- output a character to given file.
-* [`ft_putstr_fd`](ft_putstr_fd.c)		- output string to given file.
-* [`ft_putendl_fd`](ft_putendl_fd.c)		- output string to given file with newline.
-* [`ft_putnbr_fd`](ft_putnbr_fd.c)		- output integer to given file.
-* [`ft_itoa`](ft_itoa.c)					- convert integer to ASCII string.
-* [`ft_substr`](ft_substr.c)				- extract substring from string.
-* [`ft_strtrim`](ft_strtrim.c)			- trim beginning and end of string with the specified characters.
-* [`ft_strjoin`](ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
-* [`ft_split`](ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
-* [`ft_strmapi`](ft_strmapi.c)			- create new string from modifying string with specified function.
+* [`ft_putchar_fd`](libft/ft_putchar_fd.c)		- output a character to given file.
+* [`ft_putstr_fd`](libft/ft_putstr_fd.c)		- output string to given file.
+* [`ft_putendl_fd`](libft/ft_putendl_fd.c)		- output string to given file with newline.
+* [`ft_putnbr_fd`](libft/ft_putnbr_fd.c)		- output integer to given file.
+* [`ft_itoa`](libft/ft_itoa.c)					- convert integer to ASCII string.
+* [`ft_substr`](libft/ft_substr.c)				- extract substring from string.
+* [`ft_strtrim`](libft/ft_strtrim.c)			- trim beginning and end of string with the specified characters.
+* [`ft_strjoin`](libft/ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
+* [`ft_split`](libft/ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
+* [`ft_strmapi`](libft/ft_strmapi.c)			- create new string from modifying string with specified function.
 
 ### Linked list functions
 
