@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 11:58:41 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/21 13:23:23 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:38:05 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,25 +31,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(cnv_dst, cnv_src, len);
 	return (cnv_dst);
 }
-
-/*
-	while (len)
-	{
-		cnv_dst[len - 1] = cnv_src[len - 1];
-		if (len == 0)
-			break ;
-		len--;
-	}
-	return (cnv_dst);
-*/
-/*
-int main()
-{
-	char s[10] = "abcdefj";
-	printf("%s\n", ft_memmove((s), s+2, 3));
-	printf("%s\n", s);
-	char s2[10] = "abcdefj";
-	printf("original : %s \n", memmove(s2, s2 +2, 3));
-	printf("%s\n", s2);
-}
-*/

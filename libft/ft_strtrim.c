@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 19:14:21 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:19:53 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:40:48 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	}
 	return (ft_substr(s1, i, j - i + 1));
 }
-
-/*
-int main()
-{
-	char *s1 = "-*-*-*abc*-*-*defj*-*-*";
-	char *set = "-*+";
-	printf("%s\n", ft_strtrim(s1, set));
-}*/

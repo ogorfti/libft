@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:28:31 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 20:47:22 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:35:47 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	printf("%d\n",isalpha('a'));
-}*/

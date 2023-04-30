@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 14:26:30 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:12:03 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:38:29 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, "\n", 1);
 	}
 }
-/*
-int main()
-{
-	char *s = "oussama";
-	int fd = open("filedis1", O_WRONLY | O_CREAT );
-	ft_putendl_fd(s, fd);
-}*/

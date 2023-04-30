@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:13:49 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/21 12:35:01 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:33:07 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdio.h>
-# include <ctype.h>
-# include <string.h>
 # include <stdlib.h>
-# include <strings.h>
-# include <fcntl.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);

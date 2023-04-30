@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:28:05 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 21:51:49 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:42:44 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,3 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-	printf("%d\n",ft_isprint('	'));
-	printf("%d\n",isprint('	'));
-
-}*/

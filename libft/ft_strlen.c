@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:35:53 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/06 09:58:45 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:40:15 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *s)
 	i++;
 	return (i);
 }
-/*
-int main()
-{
-	char *s = "ouss  amaa  ";
-	printf ("%zu\n", ft_strlen(s));
-	printf ("%lu\n", strlen(s));
-}*/

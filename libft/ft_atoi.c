@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 14:01:42 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:06:08 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:35:21 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (s * r);
 }
-/*
-int main()
-{
-	printf("%d\n", ft_atoi("-2147483649"));
-	printf("%d\n", atoi("-2147483649"));
-}*/

@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:10:54 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 20:48:49 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:35:55 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_isdigit(int d)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	printf("%d\n", ft_isdigit('-'));
-}*/

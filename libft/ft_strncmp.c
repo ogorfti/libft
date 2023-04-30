@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 16:09:26 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:08:39 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:40:26 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	char *s1 = "abd";
-	char *s2 = "abc";
-	printf("%d\n", ft_strncmp(s1, s2, 3));
-}*/

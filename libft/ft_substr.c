@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 14:19:23 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/14 22:41:28 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:40:55 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	cnv_d[i] = '\0';
 	return (cnv_d);
 }
-
-// int main()
-// {
-// 	char src[] = "Oussamagfx";
-// 	printf("%s\n", ft_substr(src, 5, 8));
-
-// }

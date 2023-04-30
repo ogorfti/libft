@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 18:04:17 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:21:08 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:40:34 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,20 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return ((char *)&haystack[i - ft_strlen(needle)]);
 	return (NULL);
 }
-/*
-int main()
-{
-	char haystack[50] = "lorem ipsum dolor sit amet";
-	char needle[8] = "ipsum";
-	//printf("%lu", x);
-	printf("%s\n", ft_strnstr(haystack, needle, 30));
-	printf("%s\n", strnstr(haystack, needle, 30));
-}*/
-/*
-int main()
-{
-	char haystack[30] = "aaabcabcd";
-	char needle[10] = "aabc";
-	printf("%s\n", ft_strnstr(haystack, needle, -1));
-	printf("%s\n", strnstr(haystack, needle, -1));
-}*/

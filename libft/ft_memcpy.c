@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 16:42:01 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:09:52 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:42:59 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (cnv_d);
 }
-
-/*
-int main()
-{
-	char s[10] = "kyg";
-	char d[10] = "kyg";
-	
-	printf("%s|\n", ft_memcpy(d,s,0));
-	printf("%s|\n", memcpy(d,s,0));
-}*/

@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 15:44:53 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 20:24:38 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:41:53 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*
-int main()
-{
-	char  s[20] = "oussama";
-	//unsigned char *r = s;
-	int  n = 0;
-	ft_bzero(s,n);
-	printf("%s|\n", bzero(s, n));
-}*/

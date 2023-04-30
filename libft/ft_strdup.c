@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 12:24:19 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/05 18:44:23 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:38:54 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strdup(const char *s1)
 	target[i] = '\0';
 	return (target);
 }
-/*
-int main()
-{
-	char *s = "oussama";
-	printf("original : %s\n", ft_strdup(s));
-	printf("original : %s\n", strdup(s));
-}*/

@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 11:59:37 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 21:37:26 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:38:48 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)&s[i]);
 }
-/*
-int main()
-{
-	char *s = "tripouille";
-	printf("%s\n", ft_strchr(s, 'o'));
-	printf("%s\n", strchr(s, 'o'));
-}*/

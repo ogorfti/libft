@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:37:23 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 21:54:25 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:35:42 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_isalnum(int c)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	printf("%d\n", ft_isalnum('8'));
-	printf("%d\n", isalnum('8'));
-}*/

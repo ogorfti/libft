@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 14:46:51 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 21:40:59 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:43:17 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (len);
 }
-/*
-int main()
-{
-	char s[50] = "coucou";
-	char d[50] = "A";
-
-	size_t n = 0;
-printf("%lu\n", strlcpy(d, s, n));
-	printf("%lu\n", ft_strlcpy(d, s, n));
-
-}*/

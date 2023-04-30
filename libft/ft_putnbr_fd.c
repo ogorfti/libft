@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:02:27 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:13:43 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:38:34 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}	
 }
-/*
-int main()
-{
-	int nbr = -2147483648;
-	int fd = open("filedis2.txt", O_CREAT | O_WRONLY);
-	ft_putnbr_fd(nbr, fd);
-}*/

@@ -6,7 +6,7 @@
 #    By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/01 16:13:34 by ogorfti           #+#    #+#              #
-#    Updated: 2022/10/22 21:28:06 by ogorfti          ###   ########.fr        #
+#    Updated: 2022/10/25 20:23:15 by ogorfti          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ OBJS	= ${SRCS:.c=.o}
 OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 
 
-%.c : %.o
+%.o : %.c
 			${CC} ${CFLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS}

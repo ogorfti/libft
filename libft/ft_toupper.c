@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 11:37:01 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/14 22:08:19 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:41:14 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-int main()
-{
-	printf("%c\n", ft_toupper('A'));
-	printf("%c\n", toupper('A'));
-}*/

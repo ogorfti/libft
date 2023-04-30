@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 16:14:45 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/13 22:18:31 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:39:56 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (len_d + len_s);
 }
-/*
-int main()
-{
-	char *d;
-	char *s = "oussama";
-	//printf("%lu\n", ft_strlcat(d, s, -1));
-	printf("%lu", strlcat(d, s, -1));
-}*/

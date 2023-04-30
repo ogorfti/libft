@@ -6,7 +6,7 @@
 /*   By: ogorfti <ogorfti@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:08:19 by ogorfti           #+#    #+#             */
-/*   Updated: 2022/10/04 20:47:32 by ogorfti          ###   ########.fr       */
+/*   Updated: 2022/10/22 21:35:51 by ogorfti          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-/*
-int main()
-{
-	printf("%d\n",ft_isascii('5'));
-	printf("%d\n",isascii('5'));
-
-}*/
