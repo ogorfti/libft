@@ -2,9 +2,7 @@
 
 ## 🗣️ About
 
-> _The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects._
-	🚀 TLDR: this project consists of coding basic C functions (see below), which are then compiled
-	into a library for use in other projects of the cursus.
+> In this project, my goal was to create a C library that includes commonly used functions that I could leverage in my future projects. I focused on coding fundamental C functions that could be compiled into a library and easily utilized in various programming projects. This experience allowed me to enhance my programming skills and knowledge of the C language, as well as provided me with a valuable resource to streamline my future coding projects.
 
 ### Functions from `<ctype.h>` library
 
