@@ -8,40 +8,40 @@
 
 ### Functions from `<ctype.h>` library
 
-* [`ft_isascii`](ft_isascii.c)		- test for ASCII character.
-* [`ft_isalnum`](ft_isalnum.c)		- alphanumeric character test.
-* [`ft_isalpha`](ft_isalpha.c)		- alphabetic character test.
-* [`ft_isdigit`](ft_isdigit.c)		- decimal-digit character test.
-* [`ft_isprint`](ft_isprint.c)		- printing character test (space character inclusive).
-* [`ft_tolower`](ft_tolower.c)		- upper case to lower case letter conversion.
-* [`ft_toupper`](ft_toupper.c)		- lower case to upper case letter conversion.
+* [`ft_isascii`](libft/ft_isascii.c)		- test for ASCII character.
+* [`ft_isalnum`](libft/ft_isalnum.c)		- alphanumeric character test.
+* [`ft_isalpha`](libft/ft_isalpha.c)		- alphabetic character test.
+* [`ft_isdigit`](libft/ft_isdigit.c)		- decimal-digit character test.
+* [`ft_isprint`](libft/ft_isprint.c)		- printing character test (space character inclusive).
+* [`ft_tolower`](libft/ft_tolower.c)		- upper case to lower case letter conversion.
+* [`ft_toupper`](libft/ft_toupper.c)		- lower case to upper case letter conversion.
 
 ### Functions from `<stdlib.h>` library
 
-* [`ft_atoi`](ft_atoi.c)		- convert ASCII string to integer.
-* [`ft_calloc`](ft_calloc.c)	- memory allocation.
+* [`ft_atoi`](libft/ft_atoi.c)		- convert ASCII string to integer.
+* [`ft_calloc`](libft/ft_calloc.c)	- memory allocation.
 
 ### Functions from `<strings.h>` library
 
-* [`ft_bzero`](ft_bzero.c)		- write zeroes to a byte string.
-* [`ft_memset`](ft_memset.c)		- write a byte to a byte string.
-* [`ft_memchr`](ft_memchr.c)		- locate byte in byte string.
-* [`ft_memcmp`](ft_memcmp.c)		- compare byte string.
-* [`ft_memmove`](ft_memmove.c)	- copy byte string.
-* [`ft_memcpy`](ft_memcpy.c)		- copy memory area.
-* [`ft_memccpy`](ft_memccpy.c)	- copy string until character found.
+* [`ft_bzero`](libft/ft_bzero.c)		- write zeroes to a byte string.
+* [`ft_memset`](libft/ft_memset.c)		- write a byte to a byte string.
+* [`ft_memchr`](libft/ft_memchr.c)		- locate byte in byte string.
+* [`ft_memcmp`](libft/ft_memcmp.c)		- compare byte string.
+* [`ft_memmove`](libft/ft_memmove.c)	- copy byte string.
+* [`ft_memcpy`](libft/ft_memcpy.c)		- copy memory area.
+* [`ft_memccpy`](libft/ft_memccpy.c)	- copy string until character found.
 
 ### Functions from `<string.h>` library
 
-* [`ft_strlen`](ft_strlen.c)				- find length of string.
-* [`ft_strchr`](ft_strchr.c)				- locate character in string (first occurrence).
-* [`ft_strrchr`](ft_strrchr.c)			- locate character in string (last occurence).
-* [`ft_strnstr`](ft_strnstr.c)			- locate a substring in a string (size-bounded).
-* [`ft_strncmp`](ft_strncmp.c)			- compare strings (size-bounded).
-* [`ft_strnrcmp`](ft_strnrcmp.c)			- reversely compare strings (size-bounded).
-* [`ft_strdup`](ft_strdup.c)				- save a copy of a string (with malloc).
-* [`ft_strlcpy`](ft_strlcpy.c)			- size-bounded string copying.
-* [`ft_strlcat`](ft_strlcat.c)			- size-bounded string concatenation.
+* [`ft_strlen`](libft/ft_strlen.c)				- find length of string.
+* [`ft_strchr`](libft/ft_strchr.c)				- locate character in string (first occurrence).
+* [`ft_strrchr`](libft/ft_strrchr.c)			- locate character in string (last occurence).
+* [`ft_strnstr`](libft/ft_strnstr.c)			- locate a substring in a string (size-bounded).
+* [`ft_strncmp`](libft/ft_strncmp.c)			- compare strings (size-bounded).
+* [`ft_strnrcmp`](libft/ft_strnrcmp.c)			- reversely compare strings (size-bounded).
+* [`ft_strdup`](libft/ft_strdup.c)				- save a copy of a string (with malloc).
+* [`ft_strlcpy`](libft/ft_strlcpy.c)			- size-bounded string copying.
+* [`ft_strlcat`](libft/ft_strlcat.c)			- size-bounded string concatenation.
 
 ### Non-standard functions
 
@@ -58,12 +58,12 @@
 
 ### Linked list functions
 
-* [`ft_lstnew`](ft_lstnew.c)				- create new list.
-* [`ft_lstsize`](ft_lstsize.c)			- count elements of a list.
-* [`ft_lstlast`](ft_lstlast.c)			- find last element of list.
-* [`ft_lstadd_back`](ft_lstadd_back.c)	- add new element at end of list.
-* [`ft_lstadd_front`](ft_lstadd_front.c)	- add new element at beginning of list.
-* [`ft_lstdelone`](ft_lstdelone.c)		- delete element from list.
-* [`ft_lstclear`](ft_lstclear.c)			- delete sequence of elements of list from a starting point.
-* [`ft_lstiter`](ft_lstiter.c)			- apply function to content of all list's elements.
-* [`ft_lstmap`](ft_lstmap.c)				- apply function to content of all list's elements into new list.
+* [`ft_lstnew`](libft/ft_lstnew.c)				- create new list.
+* [`ft_lstsize`](libft/ft_lstsize.c)			- count elements of a list.
+* [`ft_lstlast`](libft/ft_lstlast.c)			- find last element of list.
+* [`ft_lstadd_back`](libft/ft_lstadd_back.c)	- add new element at end of list.
+* [`ft_lstadd_front`](libft/ft_lstadd_front.c)	- add new element at beginning of list.
+* [`ft_lstdelone`](libft/ft_lstdelone.c)		- delete element from list.
+* [`ft_lstclear`](libft/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
+* [`ft_lstiter`](libft/ft_lstiter.c)			- apply function to content of all list's elements.
+* [`ft_lstmap`](libft/ft_lstmap.c)				- apply function to content of all list's elements into new list.
