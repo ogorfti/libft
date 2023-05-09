@@ -1,4 +1,10 @@
----
+<p align="center">
+	<b><i>This is my libft project from the 42 cursus</i></b><br>
+</p>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/5zf2M4HgjjWszLd4a5/giphy.gif" alt="animated" />
+</div>
 
 ## 🗣️ About
 
